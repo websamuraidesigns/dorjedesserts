@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start-live-server",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Start-Job -ScriptBlock { & code --install-extension ritwickdey.LiveServer; Start-Sleep -Seconds 2 } | Out-Null"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^.*$",
+                    "file": 1,
+                    "location": 2,
+                    "message": 3
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*starting.*",
+                    "endsPattern": "^.*started.*"
+                }
+            }
+        }
+    ]
+}
