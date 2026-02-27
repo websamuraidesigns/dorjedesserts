@@ -41,6 +41,37 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
+
+    // ==================== Gallery Tab Switching ====================
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const galleryContents = document.querySelectorAll('.gallery-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+
+            // Remove active class from all buttons
+            tabBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            // Hide all gallery contents
+            galleryContents.forEach(content => content.classList.remove('active'));
+            // Show selected gallery content
+            document.getElementById(category).classList.add('active');
+
+            // Re-attach click listeners to new gallery images
+            const newGalleryImgs = document.querySelectorAll('.gallery-content.active .gallery-img');
+            newGalleryImgs.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    modalCaption.textContent = this.parentElement.querySelector('h3').textContent;
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+        });
+    });
 });
 
 // ==================== Contact Form Handling ==================== 

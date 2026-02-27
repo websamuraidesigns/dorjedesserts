@@ -209,6 +209,49 @@ body {
     font-size: 1.1rem;
 }
 
+/* ==================== Gallery Tabs ==================== */
+.gallery-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: var(--white);
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: var(--shadow);
+}
+
+/* ==================== Gallery Content ==================== */
+.gallery-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.gallery-content.active {
+    display: block;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
