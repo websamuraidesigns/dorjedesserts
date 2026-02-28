@@ -72,7 +72,7 @@ body {
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #4a2a5e 100%);
+    background: linear-gradient(135deg, rgba(45, 27, 61, 0.75) 0%, rgba(74, 42, 94, 0.75) 100%), url('images/hero-background.jpg') center/cover no-repeat;
     color: var(--white);
     padding: 100px 20px;
     text-align: center;

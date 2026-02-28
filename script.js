@@ -72,6 +72,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // ==================== Sophisticated Button Hover Text ====================
+    const sophisticatedBtn = document.querySelector('[data-category="sophisticaked"]');
+    if (sophisticatedBtn) {
+        sophisticatedBtn.addEventListener('mouseenter', function() {
+            this.textContent = 'Sophisticaked';
+        });
+        sophisticatedBtn.addEventListener('mouseleave', function() {
+            this.textContent = 'Sophisticated';
+        });
+    }
 });
 
 // ==================== Contact Form Handling ==================== 
