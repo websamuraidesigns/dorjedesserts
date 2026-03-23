@@ -23,6 +23,8 @@ body {
     line-height: 1.6;
     color: var(--text-color-light);
     background-color: var(--light-bg);
+    background: url('images/bg/cake_bg.avif');
+
 }
 
 p {
