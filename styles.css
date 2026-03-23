@@ -8,10 +8,11 @@
 }
 
 :root {
-    --primary-color: #d4af37;
-    --secondary-color: #2d1b3d;
-    --text-color: #333;
-    --light-bg: #f9f7f4;
+    --primary-color: #FFE0D2;
+    --secondary-color: #245C5E;
+    --text-color: #DB5939;
+    --text-color-light: #FDF6F0;
+    --light-bg: #FEF6F0;
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -20,7 +21,7 @@
 body {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--text-color-light);
     background-color: var(--light-bg);
 }
 
@@ -315,7 +316,7 @@ svg text {
 }
 
 .gallery-item {
-    background: var(--white);
+    background: var(--secondary-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -338,7 +339,7 @@ svg text {
 .gallery-item h3 {
     padding: 1rem;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--text-color-light);
 }
 
 /* ==================== Modal (Image Expansion) ==================== */
