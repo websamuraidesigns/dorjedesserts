@@ -1,6 +1,14 @@
 /* ==================== Global Styles ==================== */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+.bakery-font {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==================== Main ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +24,8 @@
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+    --cookie-text: 'Special Elite';
+    --card-text: 'Special Elite';
 }
 
 body {
@@ -45,6 +55,7 @@ body {
 }
 
 .logo {
+    font-family: var(--cookie-text);
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -57,6 +68,7 @@ body {
 }
 
 .nav-menu {
+    font-family: var(--cookie-text);
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -204,6 +216,7 @@ svg text {
 }
 
 .about-card h3 {
+    font-family: var(--cookie-text);
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.3rem;
@@ -242,6 +255,7 @@ svg text {
 }
 
 .featured-item h3 {
+    font-family: var(--card-text);
     padding: 1rem 1rem 0.5rem;
     color: var(--secondary-color);
 }
@@ -275,6 +289,7 @@ svg text {
 }
 
 .tab-btn {
+    font-family: var(--cookie-text);
     background: var(--white);
     color: var(--secondary-color);
     border: 2px solid var(--primary-color);
@@ -288,7 +303,7 @@ svg text {
 
 .tab-btn:hover {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -316,6 +331,7 @@ svg text {
 }
 
 .gallery-item {
+    font-family: var(--card-text);
     background: var(--secondary-color);
     border-radius: 10px;
     overflow: hidden;
@@ -552,6 +568,7 @@ svg text {
 /* ==================== Responsive Design ==================== */
 @media (max-width: 768px) {
     .nav-menu {
+        font-family: var(--cookie-text);
         gap: 1rem;
     }
 
@@ -607,6 +624,7 @@ svg text {
     }
 
     .nav-menu {
+        font-family: var(--cookie-text);
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
