@@ -16,10 +16,14 @@
 }
 
 :root {
-    --primary-color: #FFE0D2;
-    --secondary-color: #245C5E;
-    --text-color: #DB5939;
-    --text-color-light: #FDF6F0;
+    --primary-color: #3D2B1F; /* Deep Cocoa: Grounding, sophisticated; great for text and footers. */
+    --secondary-color: #F3E5AB; /* Warm Vanilla: Soft, inviting; perfect for backgrounds or large sections. */
+    --accent-color: #C5A059; /* Burnished Gold: High-end, celebratory; use for buttons and highlights. */
+    --neutral-color: #FFFBF2; /* Whipped Cream: Clean, airy; use for white space to keep it modern. */
+    --tertiary-color: #A67B5B; /* Soft Caramel: Great for borders, icons, or secondary headings. */
+    --text-color: #3D2B1F;
+    --text-color-light: #FFFBF2;
+    --text-color-accent: #C5A059;
     --light-bg: #FEF6F0;
     --white: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -31,8 +35,8 @@
 body {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
-    color: var(--text-color-light);
-    background-color: var(--light-bg);
+    color: var(--neutral-color);
+    background-color: var(--secondary-color);
     background: url('images/bg/cake_bg.avif');
 
 }
@@ -42,7 +46,7 @@ p {
 }
 /* ==================== Navigation ==================== */
 .navbar {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #4a2a5e 100%);
+    background: linear-gradient(135deg, #866249 0%, var(--primary-color) 50%);
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -62,7 +66,7 @@ p {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--neutral-color);
 }
 
 .logo a{
@@ -80,7 +84,7 @@ p {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--neutral-color);
     font-weight: 500;
     transition: color 0.3s ease;
     padding: 0.5rem 0;
@@ -88,16 +92,18 @@ p {
     font-size: 1.3rem
 }
 
-.nav-menu a:hover,
+.nav-menu a:hover, .nav-menu a.active:hover {
+    color: var(--accent-color);
+}
 .nav-menu a.active {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
+    color: var(--neutral-color);
+    border-bottom-color: var(--tertiary-color);
 }
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, rgba(45, 27, 61, 0.75) 0%, rgba(74, 42, 94, 0.75) 100%), url('images/hero-background.jpg') center/cover no-repeat;
-    color: var(--white);
+    background: linear-gradient(135deg, rgba(45, 27, 61, 0.75) 75%, var(--primary-color) 100%), url('images/hero-background.jpg') center/cover no-repeat;
+    color: var(--neutral-color);
     padding: 100px 20px;
     text-align: center;
     min-height: 400px;
@@ -109,7 +115,7 @@ p {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .hero-content p {
@@ -134,10 +140,11 @@ p {
 }
 
 .cta-button:hover {
-    background: #9d6704;
+    background: var(--accent-color);
+    color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
-    color: #e9eebc;
+    font-weight: bold;
 }
 
 /*        sheen effect      */
@@ -148,7 +155,7 @@ p {
   top: -50%;
   right: -50%;
   bottom: -50%;
-  left: -50%;
+  left: -67%;
   background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
   transform: rotateZ(60deg) translate(-5em, 7.5em);
 }
@@ -171,7 +178,7 @@ svg {
 
 svg text {
   text-anchor: middle;
-  fill: var(--primary-color);
+  fill: var(--accent-color);
   font-size: 3rem;
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
@@ -191,8 +198,9 @@ svg text {
 .contact-page h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .about-content {
@@ -256,6 +264,18 @@ svg text {
     box-shadow: var(--shadow);
 }
 
+.featured h4 {
+    color: var(--primary-color);
+    font-size: 2rem; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.featured p {
+    color: var(--primary-color); 
+    text-align: center;  
+    font-weight: bold;  
+}
 
 
 
@@ -268,9 +288,10 @@ svg text {
 
 .gallery-subtitle {
     text-align: center;
-    color: #666;
+    color: var(--primary-color);
     margin-bottom: 2rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* ==================== Gallery Tabs ==================== */
@@ -284,9 +305,9 @@ svg text {
 
 .tab-btn {
     font-family: var(--cookie-text);
-    background: var(--white);
+    background: var(--primary-color);
     color: var(--secondary-color);
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--tertiary-color);
     padding: 10px 25px;
     border-radius: 50px;
     cursor: pointer;
@@ -302,8 +323,8 @@ svg text {
 }
 
 .tab-btn.active {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    background: var(--accent-color);
+    color: var(--primary-color);
     box-shadow: var(--shadow);
 }
 
@@ -325,7 +346,7 @@ svg text {
 }
 
 .gallery-item {
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -348,7 +369,7 @@ svg text {
 .gallery-item h3 {
     padding: 1rem;
     text-align: center;
-    color: var(--text-color-light);
+    color: var(--neutral-color);
 }
 
 /* ==================== Modal (Image Expansion) ==================== */
@@ -399,7 +420,7 @@ svg text {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--white);
+    color: var(--neutral-color);
     font-size: 1.2rem;
     text-align: center;
     max-width: 80%;
@@ -409,7 +430,7 @@ svg text {
     position: absolute;
     top: 20px;
     right: 35px;
-    color: var(--white);
+    color: var(--neutral-color);
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
@@ -429,9 +450,10 @@ svg text {
 
 .contact-subtitle {
     text-align: center;
-    color: #666;
+    color: var(--primary-color);
     margin-bottom: 3rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .contact-container {
@@ -443,7 +465,7 @@ svg text {
 
 .contact-info h2,
 .contact-form-container h2 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
@@ -451,7 +473,7 @@ svg text {
 .info-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .info-item:last-child {
@@ -464,13 +486,13 @@ svg text {
 }
 
 .info-item p {
-    color: #666;
+    color: var(--primary-color);
     line-height: 1.8;
 }
 
 /* ==================== Contact Form ==================== */
 .contact-form {
-    background: var(--white);
+    background: var(--neutral-color);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -483,7 +505,7 @@ svg text {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -491,7 +513,7 @@ svg text {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     font-family: inherit;
     font-size: 1rem;
@@ -506,8 +528,8 @@ svg text {
 }
 
 .submit-btn {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    background: var(--tertiary-color);
+    color: var(--neutral-color);
     padding: 12px 30px;
     border: none;
     border-radius: 5px;
@@ -519,7 +541,7 @@ svg text {
 }
 
 .submit-btn:hover {
-    background: #e6c200;
+    background: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
@@ -547,8 +569,8 @@ svg text {
 
 /* ==================== Footer ==================== */
 .footer {
-    background: var(--secondary-color);
-    color: var(--white);
+    background: var(--primary-color);
+    color: var(--neutral-color);
     text-align: center;
     padding: 2rem;
     margin-top: 60px;
