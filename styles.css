@@ -481,7 +481,7 @@ svg text {
 }
 
 .info-item h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -675,7 +675,7 @@ body {
 
 /* Override the default settings to customize your result */
 div .about-card {
-  --bg-hue: 180;
+  --bg-hue: 260;
   --bg-tint-angle: to bottom left;
   --bg-tint-start: 70%;
   --bg-shade-angle: 80deg;
