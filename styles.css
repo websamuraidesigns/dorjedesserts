@@ -58,7 +58,6 @@ p {
 }
 
 .logo {
-    font-family: var(--cookie-text);
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -218,8 +217,8 @@ svg text {
 }
 
 .about-card h3 {
+    background: none;
     font-family: var(--cookie-text);
-    color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -228,9 +227,14 @@ svg text {
     padding: 2rem;
 }
 
+.about-card-text > * {
+    background: none;
+}
+
 .about-card > img {
     width: 100%;
     height: 280px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 /* ==================== Featured Section ==================== */
@@ -319,7 +323,6 @@ svg text {
 }
 
 .gallery-item {
-    font-family: var(--card-text);
     background: var(--secondary-color);
     border-radius: 10px;
     overflow: hidden;
