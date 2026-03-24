@@ -675,7 +675,7 @@ body {
 
 /* Override the default settings to customize your result */
 div .about-card {
-  --bg-hue: 260;
+  --bg-hue: 27;
   --bg-tint-angle: to bottom left;
   --bg-tint-start: 70%;
   --bg-shade-angle: 80deg;
