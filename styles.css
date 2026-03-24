@@ -17,7 +17,8 @@
 
 :root {
     --primary-color: #FFE0D2;
-    --secondary-color: #245C5E;
+    --secondary-color: #3D2B1F;
+    --tertiary-color: #A67B5B;
     --text-color: #DB5939;
     --text-color-light: #FDF6F0;
     --light-bg: #FEF6F0;
@@ -452,6 +453,7 @@ svg text {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
+    font-family: var(--card-text);
 }
 
 .info-item:last-child {
@@ -459,7 +461,7 @@ svg text {
 }
 
 .info-item h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -547,7 +549,7 @@ svg text {
 
 /* ==================== Footer ==================== */
 .footer {
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     color: var(--white);
     text-align: center;
     padding: 2rem;
@@ -653,7 +655,7 @@ body {
 
 /* Override the default settings to customize your result */
 div .about-card {
-  --bg-hue: 180;
+  --bg-hue: 260;
   --bg-tint-angle: to bottom left;
   --bg-tint-start: 70%;
   --bg-shade-angle: 80deg;
