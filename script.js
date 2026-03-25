@@ -176,27 +176,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ==================== Active Navigation Link ==================== 
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    const currentLocation = window.location.pathname.split('/').pop() || 'index.html';
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentLocation) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-});
-
-// Hamburger menu dropdown
-function hamburger_dropdown() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
