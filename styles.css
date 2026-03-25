@@ -65,6 +65,8 @@ p {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--neutral-color);
+    display: flex;
+    align-items: center;
 }
 
 .logo a{
@@ -180,7 +182,7 @@ svg text {
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
   offset: 50%;
-  text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--accent-color), 1px 1px 0 var(--primary-color);;
+  text-shadow: -1px 2px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 #ffffff, 1px 1px 0 var(--primary-color);
 }
 
 /* ==================== About Section ==================== */
