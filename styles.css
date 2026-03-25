@@ -102,8 +102,7 @@ p {
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, rgba(45, 27, 61, 0.75) 75%, var(--primary-color) 100%), url('images/hero-background.jpg') center/cover no-repeat;
-    color: var(--neutral-color);
+    background: linear-gradient(135deg, rgb(12 6 6 / 58%) 75%, #3d291c 100%), url(images/hero-background.jpg) center / cover no-repeat;
     padding: 100px 20px;
     text-align: center;
     min-height: 400px;
