@@ -870,6 +870,6 @@ The mixin logic
 
 @media (min-width: 769px) {
     #hamburger-dropdown{
-    display: none;
+        display: none;
     }
 }
