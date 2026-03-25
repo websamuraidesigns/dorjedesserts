@@ -100,6 +100,19 @@ p {
     border-bottom-color: var(--tertiary-color);
 }
 
+/* Style navigation menu links */
+.nav-container a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+/* #hamburger-dropdown{
+display: none;
+} */
+
 /* ==================== Hero Section ==================== */
 .hero {
     background: linear-gradient(135deg, rgb(12 6 6 / 58%) 75%, #3d291c 100%), url(images/hero-background.jpg) center / cover no-repeat;
@@ -627,6 +640,26 @@ svg text {
         right: 20px;
         font-size: 28px;
     }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .nav-container #myLinks {
+    display: none;
+    }
+
+    /* Style the hamburger menu */
+    .nav-container a.icon {
+    background: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .nav-container a:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+    }
 }
 
 @media (max-width: 480px) {
@@ -662,6 +695,26 @@ svg text {
     .about-content,
     .featured-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .nav-container #myLinks {
+    display: none;
+    }
+
+    /* Style the hamburger menu */
+    .nav-container a.icon {
+    background: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .nav-container a:hover {
+    background-color: var(--tertiary-color);
+    color: black;
     }
 }
 
@@ -770,4 +823,10 @@ The mixin logic
   /* Applying that value to a property creates a mixin */
   /* Since the initial return is invalid, nothing happens unless we set a --bg-hue */
   background: var(--bg);
+}
+
+@media (min-width: 769px) {
+    #hamburger-dropdown{
+    display: none;
+    }
 }

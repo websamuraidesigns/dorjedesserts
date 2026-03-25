@@ -173,3 +173,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Hamburger menu dropdown
+function hamburger_dropdown() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

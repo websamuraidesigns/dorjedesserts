@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dorje Desserts - Artisan Cakes & Pastries</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Hamburger icon -->
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo"><a href="index.html">🎂 Dorje Desserts</a></div>
-            <ul class="nav-menu">
+            <!-- Navigation links (hidden by default on mobile) -->
+            <ul id="myLinks" class="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a id="hamburger-dropdown" href="javascript:void(0);" class="icon" onclick="hamburger_dropdown()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
 
