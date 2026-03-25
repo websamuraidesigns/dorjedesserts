@@ -36,9 +36,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
     color: var(--neutral-color);
-    background-color: var(--secondary-color);
-    background: url('images/bg/cake_bg.avif');
-
+    background: linear-gradient(180deg, rgb(115 60 20 / 28%) 75%, #e9c766bf 100%), url(images/bg/cake_bg.avif);
 }
 
 p {
