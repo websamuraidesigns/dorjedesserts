@@ -183,6 +183,7 @@ svg text {
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
   offset: 50%;
+  text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--accent-color), 1px 1px 0 var(--primary-color);;
 }
 
 /* ==================== About Section ==================== */
@@ -481,8 +482,9 @@ svg text {
 }
 
 .info-item h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .info-item p {
