@@ -18,7 +18,7 @@
 :root {
     --primary-color: #3D2B1F; /* Deep Cocoa: Grounding, sophisticated; great for text and footers. */
     --secondary-color: #F3E5AB; /* Warm Vanilla: Soft, inviting; perfect for backgrounds or large sections. */
-    --accent-color: #C5A059; /* Burnished Gold: High-end, celebratory; use for buttons and highlights. */
+    --accent-color: #e3ba6b; /* Burnished Gold: High-end, celebratory; use for buttons and highlights. */
     --neutral-color: #FFFBF2; /* Whipped Cream: Clean, airy; use for white space to keep it modern. */
     --tertiary-color: #A67B5B; /* Soft Caramel: Great for borders, icons, or secondary headings. */
     --text-color: #3D2B1F;
@@ -36,13 +36,12 @@ body {
     font-family: 'Cormorant Garamond', serif;
     line-height: 1.6;
     color: var(--neutral-color);
-    background-color: var(--secondary-color);
-    background: url('images/bg/cake_bg.avif');
-
+    background: linear-gradient(180deg, rgb(115 60 20 / 28%) 75%, #e9c766bf 100%), url(images/bg/cake_bg.avif);
 }
 
 p {
     font-size: 1.5rem;
+    font-weight: 800;
 }
 /* ==================== Navigation ==================== */
 .navbar {
@@ -67,6 +66,8 @@ p {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--neutral-color);
+    display: flex;
+    align-items: center;
 }
 
 .logo a{
@@ -115,7 +116,7 @@ display: none;
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, rgb(12 6 6 / 58%) 75%, #3d291c 100%), url(images/hero-background.jpg) center / cover no-repeat;
+    background: linear-gradient(180deg, rgb(141 140 137 / 58%) 25%, #3d291ce0 100%), url(images/hero-background.jpg) center / cover no-repeat;
     padding: 100px 20px;
     text-align: center;
     min-height: 400px;
@@ -195,7 +196,7 @@ svg text {
   font-weight: bold;
   font-family: 'Cormorant Garamond', serif;
   offset: 50%;
-  text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--accent-color), 1px 1px 0 var(--primary-color);;
+  text-shadow: -1px 2px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 #ffffff, 1px 1px 0 var(--primary-color);
 }
 
 /* ==================== About Section ==================== */
