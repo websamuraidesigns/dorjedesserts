@@ -18,7 +18,7 @@
 :root {
     --primary-color: #3D2B1F; /* Deep Cocoa: Grounding, sophisticated; great for text and footers. */
     --secondary-color: #F3E5AB; /* Warm Vanilla: Soft, inviting; perfect for backgrounds or large sections. */
-    --accent-color: #C5A059; /* Burnished Gold: High-end, celebratory; use for buttons and highlights. */
+    --accent-color: #e3ba6b; /* Burnished Gold: High-end, celebratory; use for buttons and highlights. */
     --neutral-color: #FFFBF2; /* Whipped Cream: Clean, airy; use for white space to keep it modern. */
     --tertiary-color: #A67B5B; /* Soft Caramel: Great for borders, icons, or secondary headings. */
     --text-color: #3D2B1F;
@@ -41,6 +41,7 @@ body {
 
 p {
     font-size: 1.5rem;
+    font-weight: 800;
 }
 /* ==================== Navigation ==================== */
 .navbar {
@@ -102,7 +103,7 @@ p {
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, rgb(12 6 6 / 58%) 75%, #3d291c 100%), url(images/hero-background.jpg) center / cover no-repeat;
+    background: linear-gradient(180deg, rgb(141 140 137 / 58%) 25%, #3d291ce0 100%), url(images/hero-background.jpg) center / cover no-repeat;
     padding: 100px 20px;
     text-align: center;
     min-height: 400px;
